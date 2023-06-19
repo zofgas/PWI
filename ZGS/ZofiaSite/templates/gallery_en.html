@@ -1,0 +1,70 @@
+
+{% load static %}
+
+
+<style>
+    .column {
+      float: left;
+      margin-left: 3%;
+      width: 30%;
+    }
+    p {
+      max-width:90%;
+      height:auto;
+      text-align: justify;
+    }
+
+    img {
+      align-self: center;
+    }
+
+    .right {
+      background-color: #d16277;
+      float: left;
+      width: 90%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    .right p {
+      background-color: #d16277;
+    }
+  </style>
+
+<div class="row">
+    <h1>Gallery</h1>
+      <div class="column">
+        <h2>Roses</h2>
+        <img src="{% static 'images/roza.jpg' %}" alt="Roza" style="max-width:90%;height:auto;">
+        <p>"<em>Beautiful rose, the queen of flowers,
+            The garden's ornament, the beauty's true symbol.
+            Thorns shielded, and so soft in the heart,
+            A loving gift, and at the same time a great mystery.
+            Red, pink, white or yellow,
+            In every color it delights, as if from a fairy tale.</em>"<br><br>
+      Author unknown</p>
+      </div>
+      
+      <div class="column">
+        <h2>Tulips</h2>
+        <img src="{% static 'images/tulipan.jpg' %}" alt="Tulipan" style="max-width:90%;height:auto;">
+        <p>"<em>Tulips in spring open their petals,
+            In colors as bright as the sun's glare.
+            Their delicacy will infuse everyone with delight,
+            Who immerses his gaze and petite heart in their beauty.</em>"<br><br>
+      Author unknown</p>
+        
+      </div>
+      
+      <div class="column">
+        <h2>Orchids</h2>
+        <img src="{% static 'images/storczyk.jpg' %}" alt="Storczyk" style="max-width:90%;height:auto;">
+        <p>"<em>The orchid with delicacy carries,
+            In the beauty of the flowers its fancy.
+            There is more than one mystery in these flowers,
+            Open your mind to discover their magic.</em>"<br><br>
+      Author unknown</p>
+        </div>
+  </div>
+
+ 

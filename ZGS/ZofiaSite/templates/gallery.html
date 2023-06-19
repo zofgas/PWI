@@ -1,0 +1,70 @@
+
+{% load static %}
+
+
+<style>
+    .column {
+      float: left;
+      margin-left: 3%;
+      width: 30%;
+    }
+    p {
+      max-width:90%;
+      height:auto;
+      text-align: justify;
+    }
+
+    img {
+      align-self: center;
+    }
+
+    .right {
+      background-color: #d16277;
+      float: left;
+      width: 90%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    .right p {
+      background-color: #d16277;
+    }
+  </style>
+
+<div class="row">
+    <h1>Galeria</h1>
+      <div class="column">
+        <h2>Róże</h2>
+        <img src="{% static 'images/roza.jpg' %}" alt="Roza" style="max-width:90%;height:auto;">
+        <p>"<em>Piękna róza, królowa kwiatów,
+          Ogrodów ozdoba, urody prawdziwy symbol.
+          Kolcami osłonięta, a w sercu tak miękka,
+          Kochający dar, a jednocześnie tajemnica wielka.
+          Czerwona, różowa, biała, czy żółta,
+          W każdym kolorze zachwyca, niczym z bajki baśniowa.</em>"<br><br>
+      Autor nieznany</p>
+      </div>
+      
+      <div class="column">
+        <h2>Tulipany</h2>
+        <img src="{% static 'images/tulipan.jpg' %}" alt="Tulipan" style="max-width:90%;height:auto;">
+        <p>"<em>Tulipany wiosną otwierają swe płatki,
+          w kolorach tak jaskrawych, jak słońca blaski.
+          Ich delikatność wprawia w zachwyt każdego,
+          kto zanurzy w ich pięknie swój wzrok i serce drobnego.</em>"<br><br>
+      Autor nieznany</p>
+        
+      </div>
+      
+      <div class="column">
+        <h2>Storczyki</h2>
+        <img src="{% static 'images/storczyk.jpg' %}" alt="Storczyk" style="max-width:90%;height:auto;">
+        <p>"<em>Storczyk z delikatnością niesie,
+          W pięknie kwiatuszków swe upodobanie.
+          W kwiatach tych drzemie niejedna tajemnica,
+          Otwórz swój umysł, by odkryć ich magię.</em>"<br><br>
+      Autor nieznany</p>
+        </div>
+  </div>
+
+ 

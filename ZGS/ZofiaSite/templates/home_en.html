@@ -1,0 +1,54 @@
+{% extends 'base_en.html' %}
+
+
+{% block content %}
+<div class="container text-center">
+    <div class="row">
+        <div class="col-8">
+            {{ trans }}
+            <h1>Blog</h1><br/>
+            {% for m in mess %}
+            <div class="alert alert-success" role="alert">
+                {{ m.body }}<br/>
+                <small class="text-muted">
+                    ({{ m.created_at }}) @{{ m.user.username }}
+                </small>
+            </div><br/><br/>
+            {% endfor %}
+        </div>
+
+        <div class="col-4">
+            {% if form %}
+            <form method=POST>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-secondary">Post</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+  .cookie-footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #f0f0f0;
+   padding: 10px;
+   display: block;
+}
+
+.cookie-footer.hidden {
+   display: none;
+}
+
+</style>
+<footer id="myfooter" id="cookieFooter" class="cookie-footer">
+  <p>This site uses cookies. Learn more from privacy policy</p>
+  <button onclick="toggle(this)">Accept</button>
+</footer>
+
+
+{% endblock %}
